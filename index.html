@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome to the website">
+        <meta name="keywords" content="HTML, CSS,">
+        <meta name="author" content="Melody K. Nwaogu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Welcome Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="/Our website/Images/Pizza-2.jpg" alt="pizza-2">
+                <h1>Welcome To our website</h1>
+                <p>We are excited to have you here!</p>
+            </header>
+            <h2>Create account In Our Website</h2> 
+            <label for="name">Name:<input type="text" name="name" id="name" placeholder="Enter your name"></label>
+            <label for="email">Email:<input type="text" name="email" id="email" placeholder="Enter your email" required></label>
+            <label for="password">Password:<input type="password" name="password" id="password" placeholder="create password" required minlength="8" maxlength="12" size="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" title="Must contain at least one number and one uppercase and lowercase letter, and between 8 to 12 characters">
+                <span id="strength"></span>
+            </label>
+            <div class="parent-container">
+            <button type="submit" name="submit">Submit</button>
+            </div>
+            <div id="container">
+                <h2>Continue with</h2>
+                <button id="continue-with-gmail">Continue with Gmail <img src="/Our website/Images/gmail-logo.png"></button>
+                <button id="continue-with-github">Continue with Github <img src="/Our website/Images/github-icon.png"></button>
+                <button id="continue-with-facebook">Continue with Facebook <img src="/Our website/Images/facebook-icon.png"></button>
+                <button id="continue-with-twitter">Continue with Twitter <img src="/Our website/Images/twitter-icon.png"></button>
+            </div>
+            <div id="login">
+                <h2>Login</h2>
+                <label for="email">Email:
+                  <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                </label>
+                <label for="password">Password:
+                  <input type="password" id="password" name="password" placeholder="Enter password" required minlength="8" maxlength="12" size="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" title="Must contain at least one number and one uppercase and lowercase letter, and between 8 to 12 characters">
+                  <span class="strength"></span>
+                </label>
+                <button type="submit" name="submit">Submit</button>
+            </div>
+            <footer>Thanks for Visiting</footer>
+        </div>
+    </body>
+</html>
